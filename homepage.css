@@ -1,0 +1,156 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Global styles */
+header {
+    background-color: #761212;
+    width: 100%;
+    position: fixed;
+    z-index:  999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+header nav ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.15rem;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    left: 650px; 
+}
+  
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+  color: #000000;
+}
+
+/* Container for the search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border: 2px solid #444;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 300px;
+  position: relative;
+  left: -400px; 
+}
+
+
+/* Styling the search input field */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* Transparent button with the icon */
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Icon styling */
+button i {
+  font-size: 18px;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+button:hover i {
+  color: #fff;
+}
+/* Main Content Styling */
+main {
+  padding: 200px 200px;
+  background-color: rgb(0, 0, 0);
+  color: #d22b2b;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.9rem;
+  color: #adadad;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.75rem;
+  color: #4c4a4a;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}

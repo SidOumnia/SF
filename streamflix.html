@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="streamflix.css">
+    <link rel="icon" type="image/png" href="images/icon.jpg">
+    <title>StreamFlix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="main">
+        <!-- Page 1 -->
+        <div id="page1" class="main-content active">
+            <h1><span class="text">StreamFlix</span></h1>
+            <div class="Start-btn">
+                <a href="#" id="getStartButton">Get Started</a>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div id="page2" class="main-content">
+            <h1>Welcome to StreamFlix</h1>
+            <div class="action-btns">
+                <button id="loginButton">Log In</button>
+                <button id="signUpButton">Sign Up</button>
+            </div>
+        </div>
+        <div class="main-content" id="loginForm">
+            <form>
+                <h2>Log In !!</h2>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+    
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button id="loginButton" class="button">Login</button>
+                <p>Don't have an account? <a href="#" id="switchToSignUp">Sign up</a></p>
+            </form>
+    
+            <!-- Back Button -->
+            <a href="#" id="backButton">&larr;</a>
+        </div>
+        <div class="main-content" id="signupForm">
+            <form>
+                <h2>Sign Up !!</h2>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <label for="Confirme">Confirme Password</label>
+                <input type="Confirme" id="Confirme" placeholder="Enter your password" required>
+                <button type="submit">Sign Up</button>
+    
+                <p>Do you have an account? <a href="#" id="switchToLogin">Log in</a></p>
+            </form>
+    
+            <!-- Back Button -->
+            <a href="#" id="backButtonSignUp">&larr;</a>
+        </div>
+            <!-- Password Reset Form -->
+        <div class="main-content" id="passwordResetForm">
+            <form>
+                <h2>Reset Password</h2>
+                <label for="resetEmail">Email</label>
+                <input type="email" id="resetEmail" placeholder="Enter your email" required>
+                <button type="submit">Reset Password</button>
+            </form>
+            <!-- Back Button -->
+            <a href="#" id="backButtonReset">&larr;</a>
+        </div>
+    </section>
+
+    <script src="pageTransitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Main section style */
+.main {
+    width: 100%; /* Ensure full width for responsiveness */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: flex-start; /* Align items horizontally to the left */
+    align-items: center; /* Center items vertically */
+    background-image: url('images/start.png');
+    background-size: cover; /* Ensures the image fits within the section */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding-left: 150px; /* Adjust padding for more spacing from the left edge */
+}
+
+/* Centering the text and Start button */
+.main-content {
+    display: none; /* Hidden by default */
+}
+
+/* Only the active page is shown */
+.main-content.active {
+    display: block;
+}
+
+/* Title text style */
+.text {
+    font-size: 120px; /* Adjust logo size */
+    font-style: italic;
+    font-weight: 700; /* Bold font for logo */
+    color: #ffffff; /* White color */
+    text-decoration: none;
+    margin-bottom: 20px; /* Space between the title and button */
+}
+
+/* Style for the Start button */
+.Start-btn a {
+    color: #fff;
+    background-color: #e50914; /* Red color for the background */
+    text-decoration: none; /* Remove the default underline on the link */
+    font-size: 1.1em; /* Font size */
+    font-weight: 600;
+    display: inline-block; /* Ensures the button's block-like behavior */
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    transition: transform 0.7s ease, background-color 0.7s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the Start button */
+.Start-btn a:hover {
+    background-color: #ca1334; /* Darker red on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Buttons on the second page */
+.action-btns button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.action-btns button:hover {
+    background-color: #ca1334; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Page 2 Title (Welcome to StreamFlix) */
+#page2 h1 {
+    font-size: 70px; /* Adjust this value to your desired size */
+    font-style: italic;
+    font-weight: bold; /* Bold font */
+    text-align: center; /* Center-align the text */
+    color: #ffffff; /* White text color */
+    margin-bottom: 20px; /* Space between the title and buttons */
+}
+
+/* Form Styling */
+form {
+    background: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 28px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fc0000;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b20710;
+}
+
+/* Back Button from log in*/
+#backButton {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#backButton:hover { 
+    color: #fb0532;
+}
+/* Back Button from Sign Up */
+#backButtonSignUp {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#backButtonSignUp:hover { 
+    color: #fb0532;
+}
+
+/* Back Button from reset password */
+#backButtonReset {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#backButtonReset:hover {
+    color: #fb0532;
+}
+
+/* Style for the switching buttons */
+a#switchToSignUp, a#switchToLogin {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a#switchToSignUp:hover, a#switchToLogin:hover {
+    text-decoration: underline;
+}
+
+a.forgot-password {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main {
+        padding-left: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .text {
+        font-size: 80px; /* Smaller font size for the logo */
+    }
+
+    #page2 h1 {
+        font-size: 50px; /* Adjust title size for smaller screens */
+    }
+
+    .Start-btn a, .action-btns button {
+        font-size: 16px; /* Adjust button font size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+}
+
